@@ -164,9 +164,14 @@ module.exports = [
     {
         name: 'youtube.com',
         match: /.*.youtube.com/i,
-        rules: ['gclid', 'feature', 'app', 'src', 'lId', 'cId', 'embeds_referring_euri'],
+        rules: ['gclid', 'feature', 'app', 'src', 'lId', 'cId', 'embeds_referring_euri', 'si'],
         redirect: 'q'
     },
+    {
+        name: 'youtu.be',
+        match: /(www\.)?youtu.be/i,
+        rules: ['si', 'feature']
+    }
     {
         name: 'humblebundle.com',
         match: /www.humblebundle.com/i,
